@@ -1,0 +1,177 @@
+:root{
+    font-size: 62.5%;
+    --white-color: #F7F7F7;
+    --second-text-color: rgba(115, 115, 115, 1);
+}
+body{
+    font-family: "Montserrat";
+    font-style: normal;
+}
+header{
+    background-color: #F7F7F7;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+.logo{
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: black;
+}
+.menu-linf{
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 4.5rem;
+    color:var(--second-text-color);
+
+}
+.title-page{
+    background-color: #FAFAFA;
+    text-align: center;
+
+}
+h1{
+    display: none;
+}
+h2{
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 5.7rem;
+}
+.h2-text{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: var(--second-text-color);
+}
+.headline-btn{
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: var(--white-color);
+    background: #FF7B47;
+    border-radius: 3.7rem;
+}
+.headline-btn2{
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #0D5C63;
+    border-color:#0D5C63 ;
+    border: 1px solid;
+    border-radius: 3.7rem;
+}
+.main-page{
+    background-color: var(--white-color);
+    text-align: center;
+}
+.main-page-text,.video-rext-page,.text-reviews-page{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--second-text-color);
+}
+h3{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+.video-page{
+    background: #F3F3F3;
+    text-align: center;
+}
+
+.reviews-page{
+    background: #FAFAFA;
+    text-align: center;
+}
+.star-win{
+    margin:0 4.35rem;
+    background: var(--white-color);border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    text-align: left;
+}
+.stars,.foto-name{
+    margin-left: 3.5rem;
+}
+
+.name,.profession{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #FF7B47;
+
+}
+.profession{
+    color: #252B42;
+}
+blockquote{
+    margin-left: 3.5rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color:var(--second-text-color);
+}
+.forms-page{
+    text-align: center;
+}
+input[type=text] {
+    border: 2px solid black;
+    border-radius: 0.1rem;
+}
+
+
+.form-btm{
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #FFFFFF;
+    background-color: #FF7B47;
+    border-radius: 0.5rem;
+}
+
+.text-h3{
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--second-text-color);
+}
+
+footer{
+    background-color: #252B42;
+    color: #FFFFFF;
+}
+h4{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: left;
+}
+
+
+.info-item{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.last-form{
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+}
+.last-btm-form{
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    color: #FFFFFF;
+    background-color: #FF7B47;
+}
