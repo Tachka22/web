@@ -12,28 +12,59 @@
     --rewblock-bg-color:rgba(222, 222, 222, 1);
 }
 body{
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
+
 }
 header{
     background-color: var(--header-bg-color);
+    padding-top: 23px;
+    padding-bottom: 90px;
 }
 a{
     text-decoration: none;
     color: var(--textA-color);
 }
-.menu{
-    text-align: center;
-    padding: 0;
-    list-style-type: none;
+.navigation{
+    display: flex;
+    align-items: center
 }
-
 .logo{
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 3.2rem;
     color: var(--textA-color);
+    margin-left: 23px;
 }
+
+.btn-head{
+    border: 0mm;
+    padding: 0;
+    background-color: var(--header-bg-color);
+}
+nav{
+    text-align: center;
+    list-style-type: none
+}
+
+ul{
+    margin-top: 84px;
+    margin-left: 0px;
+    list-style-type: none
+}
+li {
+    margin: 15px 0;
+}
+
+li:first-child {
+    margin-top: 0;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+
 .menu-linf{
     font-weight: 400;
     font-size: 3rem;
@@ -44,8 +75,10 @@ a{
 .title-page{
     background-color:var(--page-bg-whitecolor);
     text-align: center;
-
+    padding: 80px 67.5px;
+    padding-bottom: 50px;
 }
+
 h1{
     display: none;
 }
@@ -54,11 +87,16 @@ h2{
     font-size: 4rem;
     line-height: 5.7rem;
 }
-.h2-text{
+.title-page-text{
     font-weight: 500;
     font-size: 2rem;
     line-height: 3rem;
     color: var(--second-text-color);
+    margin: 40px auto;
+
+}
+.btm{
+    margin-bottom: 25px;
 }
 .headline-btn{
     font-weight: 700;
@@ -67,6 +105,8 @@ h2{
     color: var(--light-text-color);
     background-color: var(--orange-btm-color);
     border-radius: 3.7rem;
+    padding: 10px 36px;
+
 }
 .headline-btn2{
     font-weight: 700;
@@ -75,67 +115,134 @@ h2{
     color:var(--secbtm-bg-color);
     border: 1px solid var(--secbtm-bg-color);
     border-radius: 3.7rem;
+    padding: 10px 36px;
+
 }
+
+
 .main-page{
     background-color: var(--light-text-color);
     text-align: center;
+    padding: 75px 40px 100px 40px;
 }
-.main-page-text,.video-rext-page,.text-reviews-page{
+.main-page-text,.video-text-page,.text-reviews-page,.text-industry{
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 2rem;
     color: var(--second-text-color);
 }
+.text-industry{
+    margin-top: 10px;
+    margin-bottom: 45px;
+}
+.main-page-text{
+    text-align: left;
+}
+.main-blocks{
+    list-style-type: none 
+}
+.block{
+    border: 0.1px solid var(--second-text-color);
+    margin-bottom: 30px;
+    padding: 35px 40px;
+    max-width: 328px;
+    margin-right: auto;
+    margin-left: auto;
+}
 h3{
     font-weight: 700;
-    font-size: 2.4rem;
-    line-height: 3.2rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.img-name{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+
 }
 .video-page{
     background: var(--page-bg-whitecolor);
     text-align: center;
+    padding-top: 98px;
+}
+.video-text-page{
+    margin-top: 10px;
+    margin-bottom: 60px;
 }
 
 .reviews-page{
     background: var(--page-bg-whitecolor);
     text-align: center;
+    padding: 75px 52px 94px 52px ;
 }
-.star-win{
-    margin:0 4.35rem;
+.text-reviews-page{
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.block-rewiews{
     background: var(--light-text-color);
     border: 1px solid var(--rewblock-bg-color);
     border-radius: 5px;
+    max-width: 329px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    padding: 30px 35px;
     text-align: left;
 }
-.stars,.foto-name{
-    margin-left: 3.5rem;
+.stars{
+    margin-left: 0px;
 }
-
+blockquote{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    text-align: left;
+}
 .name,.profession{
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
     color: var(--orange-btm-color);
+    margin: 0px;
+    margin-left: 15px;
 
 }
 .profession{
     color: var(--textA-color);
 }
 blockquote{
-    margin-left: 3.5rem;
+    margin-left: 0px;
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2rem;
     color:var(--second-text-color);
 }
+.foto-name{
+    display: flex;
+}
 .forms-page{
     text-align: center;
+    padding-left: 61px;
+    padding-right: 61px;
+    padding-top: 115px;
+    padding-bottom: 40px;
 }
 input[type=text] {
     border: 2px solid var(--second-text-color);
     border-radius: 0.1rem;
+    width: 286px;
 }
 
+.ul-form{
+    margin: 0px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 85px;
+    width: 292px;
+}
 
 .form-btm{
     font-weight: 700;
@@ -144,24 +251,49 @@ input[type=text] {
     color: var(--light-text-color);
     background-color: var(--orange-btm-color);
     border-radius: 0.5rem;
+    padding: 15px 71px;
 }
+
 
 .text-h3{
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 2rem;
     color: var(--textA-color);
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 footer{
     background-color: var(--footer-bg-color);
     color:var(--light-text-color);
+    padding-top: 53px;
+    padding-left: 46px;
+}
+.img-social{
+    margin-top: 63px;
+    margin-bottom: 110px;
+}
+.item-img{
+    margin-right: 20px;
 }
 h4{
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 2.4rem;
     text-align: left;
+}
+.menu-info{
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+.input-form{
+    margin: 0px;
+    margin-bottom: 20px;
+    width: 292px;
 }
 
 
@@ -170,16 +302,31 @@ h4{
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
+    margin-bottom: 10px;
+}
+.li-footer{
+    margin: 0px;
+    margin-bottom: 10px;
 }
 .last-form{
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 2.8rem;
+    margin-top: 20px;
+    position: relative;
 }
 .last-btm-form{
+    top: 20px;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 2.8rem;
     color: var(--light-text-color);
     background-color:var(--orange-btm-color);
+    position: absolute;
+    top: 1px;
+    right: 40px;
+}
+.last-input{
+    display: block;
+    width: 204px;
 }
