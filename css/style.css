@@ -25,22 +25,36 @@ a{
     text-decoration: none;
     color: var(--textA-color);
 }
-.navigation{
+
+.navigator{
     display: flex;
-    align-items: center
+    justify-content: flex-start;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 35px;
+    padding-right: 38px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
 }
+
 .logo{
     font-size: 2.4rem;
     font-weight: 700;
     line-height: 3.2rem;
     color: var(--textA-color);
-    margin-left: 23px;
 }
+.container-head-line{
+    margin-left: auto;
 
+}
 .btn-head{
     border: 0mm;
     padding: 0;
     background-color: var(--header-bg-color);
+    margin-right: 24px;
 }
 nav{
     text-align: center;
@@ -99,6 +113,7 @@ h2{
     margin-bottom: 25px;
 }
 .headline-btn{
+    display: inline-block;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 2.8rem;
@@ -109,6 +124,7 @@ h2{
 
 }
 .headline-btn2{
+    display: inline-block;
     font-weight: 700;
     font-size: 1.4rem;
     line-height: 2.8rem;
@@ -163,11 +179,17 @@ h3{
 .video-page{
     background: var(--page-bg-whitecolor);
     text-align: center;
-    padding-top: 98px;
+    padding: 98px 42px 174px 42px;
+
 }
 .video-text-page{
     margin-top: 10px;
     margin-bottom: 60px;
+}
+video{
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .reviews-page{
@@ -181,6 +203,7 @@ h3{
 }
 
 .block-rewiews{
+    margin: 0px;
     background: var(--light-text-color);
     border: 1px solid var(--rewblock-bg-color);
     border-radius: 5px;
@@ -219,15 +242,26 @@ blockquote{
     line-height: 2rem;
     color:var(--second-text-color);
 }
-.foto-name{
-    display: flex;
-}
+
 .forms-page{
     text-align: center;
     padding-left: 61px;
     padding-right: 61px;
     padding-top: 115px;
     padding-bottom: 40px;
+}
+
+.forms-page-head{
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+select{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    
 }
 input[type=text] {
     border: 2px solid var(--second-text-color);
@@ -241,7 +275,7 @@ input[type=text] {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 85px;
-    width: 292px;
+    
 }
 
 .form-btm{
@@ -262,13 +296,13 @@ input[type=text] {
     color: var(--textA-color);
     margin-top: 10px;
     margin-bottom: 50px;
+    text-align: left;
 }
 
 footer{
     background-color: var(--footer-bg-color);
     color:var(--light-text-color);
-    padding-top: 53px;
-    padding-left: 46px;
+    padding: 53px 46px 90px 47px;
 }
 .img-social{
     margin-top: 63px;
@@ -293,7 +327,7 @@ h4{
 .input-form{
     margin: 0px;
     margin-bottom: 20px;
-    width: 292px;
+    width: 100%;
 }
 
 
@@ -314,6 +348,7 @@ h4{
     line-height: 2.8rem;
     margin-top: 20px;
     position: relative;
+    border: 0px;
 }
 .last-btm-form{
     top: 20px;
@@ -325,8 +360,46 @@ h4{
     position: absolute;
     top: 1px;
     right: 40px;
+    border: 0px;
 }
 .last-input{
     display: block;
     width: 204px;
+    border: 0px;
+}
+
+@media screen and (min-width: 1440px) {
+    .rewiews-ul{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .block-rewiews{
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .main-blocks{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .block{
+        margin: 0;
+    }
+    .title-btn-box{
+        display: inline-flex;
+        align-items: center;
+        align-content: center;
+        gap: 10px;
+    }
+    .btm{
+    margin: 0px;
+    }
+
+    
 }

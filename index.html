@@ -2,6 +2,15 @@
 outline 1px solid green - линии
 внешние отступы margin
 <body> -->
+<!-- 
+    1.displa: inlaine-block для кнопок +
+    2. отступы 
+    3.у video атрибут для картинки
+    4.убрать отсутп от ul сверху +
+    5.select ширина+
+    6.footer padiing сбоку и снизу +
+    7.убрать border ?
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +25,7 @@ outline 1px solid green - линии
     <title>Consultal</title>
 </head>
     <header class="header">
-        <nav class="navigation">
+        <nav class="navigator">
             <a href="" class="logo">Consultal</a>
             <div class="container-head-line">
                 <button class="btn-head"><img src="img/loupe.svg" alt="поиск"></button>
@@ -52,8 +61,11 @@ outline 1px solid green - линии
                 objects will act, but things
                 on a small scale just do
                 not act that way.</p>
+                <div class="title-btn-box">
                 <p class="btm"><a href="" class="headline-btn">Get Quote Now</a></p>
-                <p><a href="" class="headline-btn2">Learn More</a></p>
+                <p class="btm"></p><a href="" class="headline-btn2">Learn More</a>
+                </div>
+            </p>
         </section>
         <section class="main-page">
                 <h2 class="h2">Industry</h2>
@@ -123,11 +135,10 @@ outline 1px solid green - линии
                 the conflict between the<br>
                 two major realms of Classical<br>
                 physics: Newtonian mechanics </p>
-                <button class="btn-play"><img src="img/play.svg" alt=""></button>
-            <video controls width="320" class="video">
-                
+            <video controls  class="video">
                 <source src="img/Video.mp4" type="video/mp4">
                 <p>Ваш браузер не поддерживает встроенные видео. Попробуйте скачать его по</p>
+                
             </video>
         </section>
         <section class="reviews-page">
@@ -180,8 +191,8 @@ outline 1px solid green - линии
                 </ul>
         </section>
         <section class="forms-page">
-            <h4>Contact Us</h4>
-            <h2>Make an Appointment</h2>
+            <h4 class="forms-page-h4">Contact Us</h4>
+            <h2 class="forms-page-head">Make an Appointment</h2>
             <form>
                 <ul class="ul-form">
                     <li class="input-form">
@@ -287,7 +298,7 @@ outline 1px solid green - линии
         <h4>Get In Touch</h4>
         <form class="last-form">
             <label><input class ="last-input" type="text"></label>
-            <button class="last-btm-form"   >Subscribe</button>
+            <button class="last-btm-form" >Subscribe</button>
         </form>
         <p>Lorem impsum dolor amit</p>
     </footer>
