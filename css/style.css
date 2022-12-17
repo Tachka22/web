@@ -17,9 +17,10 @@ body{
 
 }
 header{
+    
     background-color: var(--header-bg-color);
     padding-top: 23px;
-    padding-bottom: 90px;
+    padding-bottom: 55px;
 }
 a{
     text-decoration: none;
@@ -87,10 +88,8 @@ li:last-child {
 
 }
 .title-page{
-    background-color:var(--page-bg-whitecolor);
     text-align: center;
-    padding: 80px 67.5px;
-    padding-bottom: 50px;
+    padding: 80px;
 }
 
 h1{
@@ -100,6 +99,11 @@ h2{
     font-weight: 700;
     font-size: 4rem;
     line-height: 5.7rem;
+
+}
+.title{
+    text-shadow: 0px 4px 4px ;
+    -webkit-text-stroke: 0.5px #252B42;
 }
 .title-page-text{
     font-weight: 500;
@@ -177,19 +181,23 @@ h3{
 
 }
 .video-page{
-    background: var(--page-bg-whitecolor);
     text-align: center;
     padding: 98px 42px 174px 42px;
+    background-image: url(/web/lesson_1/img/Features-11.png);
 
 }
 .video-text-page{
     margin-top: 10px;
     margin-bottom: 60px;
 }
-video{
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
+
+.video_box{
+    position: relative;
+}
+
+iframe{
+    height: 442px;
+    
 }
 
 .reviews-page{
@@ -232,9 +240,15 @@ blockquote{
     margin-left: 15px;
 
 }
+.foto-name{
+    display: flex;
+    align-items: center;
+}
 .profession{
     color: var(--textA-color);
+    margin-left: 15px;
 }
+
 blockquote{
     margin-left: 0px;
     font-weight: 600;
@@ -245,37 +259,31 @@ blockquote{
 
 .forms-page{
     text-align: center;
-    padding-left: 61px;
-    padding-right: 61px;
-    padding-top: 115px;
-    padding-bottom: 40px;
 }
 
 .forms-page-head{
     margin-bottom: 40px;
-    text-align: left;
+    text-align:left;
+}
+.bgr-form{
+    width: 100%;
+    padding: 115px 61px 115px;
+    background: var(--page-bg-whitecolor);
+    background-image: url(/web/lesson_1/img/cover2.png);
+    background-size: cover;
 }
 
-select{
-    width: 100%;
-}
-textarea{
-    width: 100%;
+
+
+input[type=text],select,textarea {
+    border: 1px solid #BDBDBD;
     
-}
-input[type=text] {
-    border: 2px solid var(--second-text-color);
-    border-radius: 0.1rem;
-    width: 286px;
+    width: 100%;
 }
 
 .ul-form{
     margin: 0px;
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 85px;
-    
+    margin: 40px auto 0px;
 }
 
 .form-btm{
@@ -286,9 +294,14 @@ input[type=text] {
     background-color: var(--orange-btm-color);
     border-radius: 0.5rem;
     padding: 15px 71px;
+    border: 0px;
+    display: inline-block;
+
 }
 
-
+.container-before-footer{
+    padding: 40px 60px;
+}
 .text-h3{
     font-weight: 500;
     font-size: 1.4rem;
@@ -298,7 +311,9 @@ input[type=text] {
     margin-bottom: 50px;
     text-align: left;
 }
-
+.h3-head{
+    text-align: left;
+}
 footer{
     background-color: var(--footer-bg-color);
     color:var(--light-text-color);
@@ -358,14 +373,14 @@ h4{
     color: var(--light-text-color);
     background-color:var(--orange-btm-color);
     position: absolute;
-    top: 1px;
-    right: 40px;
-    border: 0px;
+    top: 0px;
+    right: 0.5px;
+    border-radius: 5px; 
 }
 .last-input{
     display: block;
     width: 204px;
-    border: 0px;
+    border-radius: 5px; 
 }
 
 @media screen and (min-width: 1440px) {
@@ -400,6 +415,19 @@ h4{
     .btm{
     margin: 0px;
     }
+    header{
+        background-color: var(--header-bg-color);
+        background-image: url(/web/lesson_1/img/cover.png);
+        background-size: cover;
+    }
+    .main-page{
+        padding-top: 145px;
+    }
 
     
+}
+@media screen and (min-width: 1440px) {
+    .forms-page{
+        background-size: cover;
+    }
 }
