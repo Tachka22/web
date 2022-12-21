@@ -61,6 +61,9 @@ nav{
     text-align: center;
     list-style-type: none
 }
+.nav2{
+    display: none;
+}
 
 ul{
     margin-top: 84px;
@@ -99,12 +102,15 @@ h2{
     font-weight: 700;
     font-size: 4rem;
     line-height: 5.7rem;
-
 }
 .title{
     text-shadow: 0px 4px 4px ;
     -webkit-text-stroke: 0.5px #252B42;
+    background: linear-gradient( #0B2349 33%, #ecd104 66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 .title-page-text{
     font-weight: 500;
     font-size: 2rem;
@@ -177,13 +183,12 @@ h3{
 .img-name{
     display: flex;
     align-items: center;
-    justify-items: center;
-
+    gap: 15px;
 }
 .video-page{
     text-align: center;
     padding: 98px 42px 174px 42px;
-    background-image: url(/web/lesson_1/img/Features-11.png);
+    background-image: url(../img/Features-11.png);
 
 }
 .video-text-page{
@@ -195,9 +200,12 @@ h3{
     position: relative;
 }
 
-iframe{
-    height: 442px;
-    
+video{
+    width: 100%;
+    max-width: 877px;
+    margin-right: auto;
+    margin-left: auto;
+    object-fit: cover;
 }
 
 .reviews-page{
@@ -269,7 +277,7 @@ blockquote{
     width: 100%;
     padding: 115px 61px 115px;
     background: var(--page-bg-whitecolor);
-    background-image: url(/web/lesson_1/img/cover2.png);
+    background-image: url(../img/cover2.png);
     background-size: cover;
 }
 
@@ -277,8 +285,8 @@ blockquote{
 
 input[type=text],select,textarea {
     border: 1px solid #BDBDBD;
-    
     width: 100%;
+    padding: 11px 188px 15px 21px;
 }
 
 .ul-form{
@@ -364,6 +372,7 @@ h4{
     margin-top: 20px;
     position: relative;
     border: 0px;
+    max-width: 321px;
 }
 .last-btm-form{
     top: 20px;
@@ -377,6 +386,7 @@ h4{
     right: 0.5px;
     border-radius: 5px; 
 }
+
 .last-input{
     display: block;
     width: 204px;
@@ -417,17 +427,71 @@ h4{
     }
     header{
         background-color: var(--header-bg-color);
-        background-image: url(/web/lesson_1/img/cover.png);
+        background-image: url(../img/cover.png);
         background-size: cover;
     }
     .main-page{
         padding-top: 145px;
     }
+    .menu{
+        display: none;
+    }
+    .title{
+        margin-top: 160px;
+        font-weight: 800;
+        font-size: 5.8rem;
+        line-height: 8rem;
+    }
+    nav{
+        position: relative;
+    }
+    .nav2{
+        display: flex;
+        gap: 21px;
+        margin-left: 533px;
+    }
+    .menu-linf2{
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: var(--second-text-color);
+    }
 
+
+
+
+
+    .container-before-footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-btm{
+        font-weight: 700;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        color: var(--light-text-color);
+        background-color: var(--orange-btm-color);
+        border-radius: 0.5rem;
+        padding: 15px 40px;
+        border: 0px;
+    }
+    .footer-main{
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     
 }
 @media screen and (min-width: 1440px) {
-    .forms-page{
-        background-size: cover;
-    }
+
 }

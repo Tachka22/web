@@ -3,7 +3,14 @@ outline 1px solid green - линии
 внешние отступы margin
 <body> -->
 <!-- 
-
+    лаба по img:
+    отступы формы
+    пути починить
+    градиент на текст
+    вопросы:
+    headline
+    poster video
+    относительный пути
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -22,10 +29,17 @@ outline 1px solid green - линии
 <header class="header">
     <nav class="navigator">
         <a href="" class="logo">Consultal</a>
+        <div class="nav2">
+            <a href="" class="menu-linf2">Home</a>
+            <a href="" class="menu-linf2">Product</a>
+            <a href="" class="menu-linf2">Pricing</a>
+            <a href="" class="menu-linf2">Contact</a>
+        </div>
         <div class="container-head-line">
             <button class="btn-head"><img src="img/loupe.svg" alt="поиск"></button>
             <button class="btn-head"><img src="img/catalog.svg" alt="каталог"></button>
             <button class="btn-head"><img src="img/basket.svg" alt="корзина"></button>
+
         </div>
     </nav>
     <nav class="nav">
@@ -43,13 +57,17 @@ outline 1px solid green - линии
                 <a href="" class="menu-linf">Contact</a>
             </li>
         </ul>
+
     </nav>
+
     <section class="title-page">
         <h1> none</h1>
-        <h2 class="title">First-Class
-            Business
-            Consultant
-        </h2>
+        <div class="bgr-title">
+            <h2 class="title">First-Class
+                Business
+                Consultant
+            </h2>
+        </div>
         <p class="title-page-text">We know how largSe
             objects will act, but things
             on a small scale just do
@@ -131,7 +149,7 @@ outline 1px solid green - линии
             two major realms of Classical<br>
             physics: Newtonian mechanics </p>
         <div class="video_box">
-                <video poster="/web/lesson_1/img/cover-vid.jpg" src="/web/lesson_1/img/Video.mp4"></video>
+            <video poster="img/poster.png" src="img/Video.mp4"></video>
         </div>
     </section>
     <section class="reviews-page">
@@ -216,14 +234,17 @@ outline 1px solid green - линии
             </form>
         </div>
         <div class="container-before-footer">
-            <h3 class="h3-head">Consulting Agency
-                For Your Business</h3>
-            <p class="text-h3">the quick fox jumps over
-                the lazy dog
-            </p>
+            <div class="con">
+                <h3 class="h3-head">Consulting Agency
+                    For Your Business</h3>
+                <p class="text-h3">the quick fox jumps over
+                    the lazy dog
+                </p>
+            </div>
+
             <button class="form-btm">Contact Us</button>
         </div>
-    </section>  
+    </section>
 </main>
 <footer class="footer">
     <h3>Consultal</h3>
@@ -233,72 +254,86 @@ outline 1px solid green - линии
         <a class="item-img" href=""><img src="img/carbon_logo-youtube.svg" alt="youtube"></a>
         <a class="item-img" href=""><img src="img/ant-design_facebook-filled.svg" alt="ant-design_facebook-filled"></a>
     </div>
-    <h4>Company Info</h4>
-    <ul class="menu-info">
-        <li class="li-footer">
-            <a href="" class="info-item">About Us</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">Carrie</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">We are hiring</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">Blog</a>
-        </li>
-    </ul>
-    <h4>Legal</h4>
-    <ul class="menu-info">
-        <li class="li-footer">
-            <a href="" class="info-item">About Us</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">Carrie</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">We are hiring</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">Blog</a>
-        </li>
-    </ul>
-    <h4>Features</h4>
-    <ul class="menu-info">
-        <li class="li-footer">
-            <a href="" class="info-item">About Us</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">Carrie</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">We are hiring</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">Blog</a>
-        </li>
-    </ul>
-    <h4>Resources</h4>
-    <ul class="menu-info">
-        <li class="li-footer">
-            <a href="" class="info-item">About Us</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">Carrie</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">We are hiring</a>
-        </li>
-        <li class="li-footer">
-            <a href="" class="info-item">Blog</a>
-        </li>
-    </ul>
-    <h4>Get In Touch</h4>
-    <form class="last-form">
-        <label><input class="last-input" type="text"></label>
-        <button class="last-btm-form">Subscribe</button>
-    </form>
-    <p>Lorem impsum dolor amit</p>
+    <div class="footer-main">
+        <div class="footer-block">
+            <h4>Company Info</h4>
+            <ul class="menu-info">
+                <li class="li-footer">
+                    <a href="" class="info-item">About Us</a>
+                </li>
+                <li class="li-footer">
+                    <a href="" class="info-item">Carrie</a>
+                </li>
+                <li class="li-footer">
+                    <a href="" class="info-item">We are hiring</a>
+                </li>
+                <li class="li-footer">
+                    <a href="" class="info-item">Blog</a>
+                </li>
+            </ul>
+    </div>
+    <div class="footer-block">
+        <h4>Legal</h4>
+        <ul class="menu-info">
+            <li class="li-footer">
+                <a href="" class="info-item">About Us</a>
+            </li>
+            <li class="li-footer">
+                <a href="" class="info-item">Carrie</a>
+            </li>
+            <li class="li-footer">
+                <a href="" class="info-item">We are hiring</a>
+            </li>
+            <li class="li-footer">
+                <a href="" class="info-item">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-block">
+        <h4>Features</h4>
+        <ul class="menu-info">
+            <li class="li-footer">
+                <a href="" class="info-item">About Us</a>
+            </li>
+            <li class="li-footer">
+                <a href="" class="info-item">Carrie</a>
+            </li>
+            <li class="li-footer">
+                <a href="" class="info-item">We are hiring</a>
+            </li>
+            <li class="li-footer">
+                <a href="" class="info-item">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-block">
+        <h4>Resources</h4>
+        <ul class="menu-info">
+            <li class="li-footer">
+                <a href="" class="info-item">About Us</a>
+            </li>
+            <li class="li-footer">
+                <a href="" class="info-item">Carrie</a>
+            </li>
+            <li class="li-footer">
+                <a href="" class="info-item">We are hiring</a>
+            </li>
+            <li class="li-footer">
+                <a href="" class="info-item">Blog</a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer-block">
+        <h4>Get In Touch</h4>
+        <form class="last-form">
+            <label><input class="last-input" type="text"></label>
+            <button class="last-btm-form">Subscribe</button>
+        </form>
+        <p>Lorem impsum dolor amit</p>
+    </div>
+</div>
 </footer>
 </body>
 
