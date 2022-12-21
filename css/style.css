@@ -188,8 +188,7 @@ h3{
 .video-page{
     text-align: center;
     padding: 98px 42px 174px 42px;
-    background-image: url(../img/Features-11.png);
-
+    background: linear-gradient(0deg, rgba(0,0,0,1) 45%,var(--page-bg-whitecolor) 45%);
 }
 .video-text-page{
     margin-top: 10px;
@@ -277,7 +276,7 @@ blockquote{
     width: 100%;
     padding: 115px 61px 115px;
     background: var(--page-bg-whitecolor);
-    background-image: url(../img/cover2.png);
+    background-image: url(../img/cover2.jpg);
     background-size: cover;
 }
 
