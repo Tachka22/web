@@ -353,7 +353,7 @@ h4{
 }
 
 
-.info-item{
+.menu-linf2{
     color: var(--light-text-color);
     font-weight: 600;
     font-size: 1.4rem;
@@ -455,8 +455,22 @@ h4{
         line-height: 2.4rem;
         color: var(--second-text-color);
     }
-
-
+    .ul-form{
+        
+        width: 50%;
+        max-width: 600px;
+        margin-left: 0;
+        margin-right: auto;
+        text-align: left;
+    }
+    .input-form{
+        width: 25%;
+    }
+    .small-input{
+        display: flex;
+        flex-wrap:wrap ;
+        max-width: 600px;
+    }
 
 
 
@@ -465,9 +479,14 @@ h4{
         flex-wrap: wrap;
         gap: 30px;
         justify-content: space-between;
+        padding-left: 0;
+        padding-right: 0;
         max-width: 1050px;
         margin-left: auto;
         margin-right: auto;
+    }
+    .text-h3{
+        margin-bottom: 0px;
     }
 
     .form-btm{
@@ -480,14 +499,35 @@ h4{
         padding: 15px 40px;
         border: 0px;
     }
+    .h3-item-img{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-bottom: 53px;
+    }
+    .img-social{
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+    hr {
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+        height:0.5px; 
+        background: rgba(115, 115, 115, 1);
+    }
     .footer-main{
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         max-width: 1050px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 70px;
     }
     
 }
