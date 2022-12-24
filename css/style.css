@@ -301,9 +301,12 @@ input,select,textarea {
     border: 1px solid #BDBDBD;
     padding: 11px auto 15px 21px;
 }
-.title-page-text::selection {
+input:focus{
+    background-color: var(--videopage-bg-color);
+}
+::selection {
     color: var(--light-text-color);
-    background-color: #2e9aff;
+    background-color:darkgoldenrod; 
     text-shadow:
     1px 0 1px var(--color-shadow),
     0 1px 1px var(--color-shadow),
@@ -614,7 +617,7 @@ hr{
         margin-right: auto;
         margin-top: 70px;
     }
-    input::active{
+    input:active{
         border: 5px solid green;
     }
 }   
