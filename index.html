@@ -200,16 +200,16 @@ outline 1px solid green - линии
             <h2 class="forms-page-head">Make an Appointment</h2>
             <form class="formsection">
                 <div class="contr">
-                <label><input class="input-sec" type="text" placeholder="Ful Name"></label>
-                <label><input class="input-sec" type="text" placeholder="example@gmail.com:"></label>
-                <label><select class="select-sec" >
-                        <option value="1">Please Select"</option>
+                <label><input class="input-sec" type="text" name="name" placeholder="Full Name" required</label>
+                <label><input class="input-sec" type="email" name="email" placeholder="example@gmail.com:"></label>
+                <label><select class="select-sec" name="choice" required>
+                        <option placeholder="Please Select" value="1">Please Select</option>
                     </select>
                 </label>
-                <select class="select-sec" >
+                <select class="select-sec" name="choice2" required>
                     <option value="2">4:00Available</option>
                 </select>
-                <textarea placeholder="Message:"  >Message</textarea>
+                <textarea placeholder="Message:"></textarea>
                 <button class="form-btm">Book Appointment</button>
             </div>
             </form>

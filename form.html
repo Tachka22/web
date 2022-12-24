@@ -70,24 +70,25 @@
         <form name="contact" method="POST" data-netlify="true">
             <fieldset>
                 <legend>Личная информация</legend>
-                <p><lable>Имя <input type="text" name="text-field" placeholder="Иванов Иван Иванович" required></lable></p>
+                <p><lable>Имя <input type="text" name="name" placeholder="Иванов Иван Иванович" required></lable></p>
                 <p><lable for="password">Пароль <input type="password" name="password" id="password" value="password"></lable></p>
-                <p><label>Пол <input type="text" name="text"></label></p>
+                <p><label>Пол <input type="text" name="gender"></label></p>
                 <p><label>Дата рождения <input type="date" name="date"></label></p>
             </fieldset>
             <fieldset>
                 <legend>Контактная данные</legend>
                 <p><label>email <input type="email" name="email"></label></p>
                 <p><label>tel <input type="tel" name="tel"></label></p>
-                <p><label>Интервал для связи <select name="quantity" required>
-                <option value="1">утро</option>
-                <option value="2">день</option>
-                <option value="4">вечер</option>
-                <option value="5">ночь</option>
+                <p><label>Интервал для связи <select name="choice" required>
+                <option value="утро">утро</option>
+                <option value="день">день</option>
+                <option value="вечер">вечер</option>
+                <option value="ночь">ночь</option>
                 </select><label></p>
                 
             </fieldset>
-            <button class="btn"><img src="../lesson_1/img/done.svg" alt=""></button>
+            <button class="btn"><img src="img/done.svg" alt=""></button>
+            <button class="btn2" type="reset"><img src="img/close.svg" alt=""></button>
         </form>
     </main>
     <footer class="footer">
