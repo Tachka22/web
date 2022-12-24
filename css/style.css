@@ -10,6 +10,7 @@
     --second-text-color:rgba(115, 115, 115, 1);
     --page-bg-whitecolor:rgba(250, 250, 250, 1);
     --rewblock-bg-color:rgba(222, 222, 222, 1);
+    --color-shadow: #000000;
 }
 body{
     font-family: "Montserrat", sans-serif;
@@ -54,7 +55,7 @@ a{
 .btn-head{
     border: 0mm;
     padding: 0;
-    background-color: var(--header-bg-color);
+    background: transparent;
     margin-right: 24px;
 }
 nav{
@@ -104,7 +105,7 @@ h2{
     line-height: 5.7rem;
 }
 .title{
-    text-shadow: 0px 4px 4px ;
+    text-shadow: 0px 4px 4px;
     -webkit-text-stroke: 0.5px #252B42;
     background: linear-gradient( #0B2349 33%, #ecd104 66%);
     -webkit-background-clip: text;
@@ -229,6 +230,9 @@ video{
     padding: 30px 35px;
     text-align: left;
 }
+select, cinput::hover{
+    background-color: #000000;
+}
 .stars{
     margin-left: 0px;
 }
@@ -282,16 +286,45 @@ blockquote{
 
 
 
-input[type=text],select,textarea {
+input,select,textarea {
     border: 1px solid #BDBDBD;
-    width: 100%;
     padding: 11px 188px 15px 21px;
 }
+.title-page-text::selection {
+    color: var(--light-text-color);
+    background-color: #2e9aff;
+    text-shadow:
+    1px 0 1px var(--color-shadow),
+    0 1px 1px var(--color-shadow),
+    2px 1px 1px var(--color-shadow),
+    1px 2px 1px var(--color-shadow),
+    3px 2px 1px var(--color-shadow),
+    2px 3px 1px var(--color-shadow);
+}
 
-.ul-form{
+.formsection{
     margin: 0px;
     margin: 40px auto 0px;
 }
+.input-sec{
+    width: 285px;
+    height: 50px;
+    margin-bottom: 15px;
+
+
+}
+.select-sec{
+    width: 285px;
+    height: 50px; 
+    margin-bottom: 15px;
+
+}
+textarea{
+    margin-bottom: 15px;
+    width: 285px;
+}
+
+
 
 .form-btm{
     font-weight: 700;
@@ -346,11 +379,7 @@ h4{
 }
 
 
-.input-form{
-    margin: 0px;
-    margin-bottom: 20px;
-    width: 100%;
-}
+
 
 
 .menu-linf2{
@@ -358,7 +387,6 @@ h4{
     font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
-    margin-bottom: 10px;
 }
 .li-footer{
     margin: 0px;
@@ -382,17 +410,27 @@ h4{
     background-color:var(--orange-btm-color);
     position: absolute;
     top: 0px;
-    right: 0.5px;
+    right: 0;
     border-radius: 5px; 
+    height: 100%;
 }
-
+hr{
+    display: none;
+}
 .last-input{
     display: block;
-    width: 204px;
+    width: 321px;
+    height: 58px;
     border-radius: 5px; 
 }
+.last-p{
+    margin-top: 5px;
+}
+.tel{
+    color: var(--header-bg-color);
+}
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
     .rewiews-ul{
         display: flex;
         gap: 30px;
@@ -432,6 +470,7 @@ h4{
     .main-page{
         padding-top: 145px;
     }
+
     .menu{
         display: none;
     }
@@ -455,23 +494,45 @@ h4{
         line-height: 2.4rem;
         color: var(--second-text-color);
     }
-    .ul-form{
-        
-        width: 50%;
-        max-width: 600px;
-        margin-left: 0;
+    .forms-page-h4, .forms-page-head{
+        max-width:1050px ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bgr-form{
+        padding-left: 195px;
+        padding-right: 195px;
+    }
+    .formsection{
+        max-width:1050px ;
+        margin-left: auto;
         margin-right: auto;
         text-align: left;
     }
-    .input-form{
-        width: 25%;
-    }
-    .small-input{
-        display: flex;
-        flex-wrap:wrap ;
-        max-width: 600px;
-    }
+    input,select, textarea{
+        border: 1px solid #BDBDBD;
+        border-radius: 5px;
+    }   
+    
+    .input-sec{
+        width: 285px;
+        height: 50px;
 
+    }
+    .select-sec{
+        width: 285px;
+        height: 50px; 
+    }
+    textarea{
+        width: 100%;
+    }
+    .contr{
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 600px;
+    }
 
 
     .container-before-footer{
@@ -513,6 +574,7 @@ h4{
         margin-bottom: 0px;
     }
     hr {
+        display: block;
         max-width: 1050px;
         margin-left: auto;
         margin-right: auto;
@@ -530,7 +592,4 @@ h4{
         margin-top: 70px;
     }
     
-}
-@media screen and (min-width: 1440px) {
-
 }
